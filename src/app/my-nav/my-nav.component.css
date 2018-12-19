@@ -1,0 +1,9 @@
+.navContainer {
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 10;
+  background-color: rgb(2, 59, 92); 
+  border-bottom: 5px solid white;
+  font-weight: bold;
+}

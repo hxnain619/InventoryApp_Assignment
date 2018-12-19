@@ -1,0 +1,23 @@
+<div class="contentContainer" >
+    <div  
+    *ngFor='let content of data'
+    #clickedProduct
+    class="card"
+    (click)='clickedEvent(clickedProduct)'
+    >
+        <img src={{content.image}} alt='' />
+        <span class="desc">
+            <h2> {{ content.title }} </h2>
+            <h4> {{ content.category }} </h4>
+            <p> {{ content.itemPlace }}</p>
+        </span>
+        <span class="price">
+            <h3>Price :
+                <span class="dollar">
+                    ${{ content.price }}
+                </span>
+            </h3>
+        </span>
+    </div>
+
+</div>
